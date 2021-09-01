@@ -1,0 +1,40 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [ "VR5RXL44RC.com.thespaghettidetective.ios", "VR5RXL44RC.com.thespaghettidetective.stage.ios" ],
+        "components": [
+          {
+            "#": "universal_link",
+            "exclude": true,
+            "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+          },
+          {
+            "#": "universal_link=false",
+            "exclude": true,
+            "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+          },
+          {
+            "?": { "universal_link": "false" }
+            "exclude": true,
+            "comment": "Matches any URL whose query params equals universal_link=false and instructs the system not to open it as a universal link"
+          },
+          {
+            "/": "/welcome/*",
+            "exclude": true,
+            "comment": "Matches any URL whose path starts with /help/website/ and instructs the system not to open it as a universal link"
+          },
+          {
+            "/": "/test/*",
+            "comment": "Matches any URL whose path starts with /help/website/ and instructs the system not to open it as a universal link"
+          },
+          {
+            "/": "*",
+            "comment": "Matches any URL whose path starts with /help/website/ and instructs the system not to open it as a universal link"
+          },
+        ]
+      }
+    ]
+  }
+}
